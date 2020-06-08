@@ -1,5 +1,7 @@
 \documentclass[letterpaper,11pt]{article}
 
+\usepackage[thin]{roboto}
+\usepackage{changepage}
 \usepackage{tabularx}
 \usepackage{titlesec}
 \usepackage[margin=1in]{geometry}
@@ -7,6 +9,9 @@
 \usepackage{fancyhdr}
 \usepackage[hidelinks]{hyperref}
 \usepackage[usenames,dvipsnames]{color}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{multicol}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -33,19 +38,16 @@
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 \titleformat{\subsection}
-{\Large}
+{\vspace{-1em}\large\bfseries}
 {}
 {0em}
-{}
+{}[\vspace{-0.5em}]
 
 \titleformat{\subsubsection}[runin]
 {\bfseries}
 {}
 {0em}
-{}[---]
-
-\titlespacing{\subsubsection}
-{2em}{0em}{0em}
+{}
 
 \titlespacing{\subsubsection}
 {2em}{0em}{0em}
@@ -91,31 +93,37 @@
 
 
 \resumeSubheading{Lynbrook High School}
-{San Jose, CA}{High School Diploma}{Aug 2016-Jun 2020}
+{San Jose, CA}{High School Diploma, U/W GPA: 3.97}{Aug 2016-Jun 2020}
 
 \resumeSubheading{Johns Hopkins CTY}
 {Online}{Courses: Multivariable Calculus}{Jan 2020-Apr 2020}
 
 \section{Skills}
 
-\subsection{\textbf{Languages}}
+\begin{multicols}{2}
+\subsection{Technical Skills}
 
-\subsubsection{Programming}
+\subsubsection{Languages}
 
-Python, Java, C++, JavaScript
+\begin{adjustwidth}{4em}{}
+Python 3, Java, C++, JavaScript(ES6), HTML, CSS, {\LaTeX}
+\end{adjustwidth}
 
-\subsubsection{Markup}
+\subsubsection{Frameworks}
 
-HTML, CSS, {\LaTeX}
+\begin{adjustwidth}{4em}{}
+ReactJS, Material-UI, Bootstrap 4
+\end{adjustwidth}
 
-\subsection{Frameworks}
+\columnbreak
 
-\subsubsection{Javascript}
+\subsection{Soft Skills}
 
-React, Material-UI
+\begin{adjustwidth}{2em}{}
+Bilingual Communicator(English, Mandarin), Leadership, Teamwork, Adaptbility
+\end{adjustwidth}
 
-\subsubsection{HTML}
-Bootstrap 4
+\end{multicols}
 
 \section{Extracurricular}
 
