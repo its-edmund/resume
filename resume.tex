@@ -1,0 +1,154 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage[margin=1in]{geometry}
+\usepackage{titling}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+\usepackage[usenames,dvipsnames]{color}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\titleformat{\subsection}
+{\Large}
+{}
+{0em}
+{}
+
+\titleformat{\subsubsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}[---]
+
+\titlespacing{\subsubsection}
+{2em}{0em}{0em}
+
+\titlespacing{\subsubsection}
+{2em}{0em}{0em}
+
+% Custom Commands
+\renewcommand{\maketitle}{
+  \begin{center}
+  {\huge\bfseries
+  \theauthor}
+
+  \vspace{0.25em}
+
+  \href{mailto:markxin2002@gmail.com}{markxin2002@gmail.com} --- \href{https://edmundxin.me}{edmundxin.me}
+
+  \end{center}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{0.25em}
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{0.25em}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\begin{document}
+
+\title{R\'esum\'e}
+\author{Edmund Xin}
+
+\maketitle
+
+\section{Education}
+
+\resumeSubheading{Georgia Institute of Technology}
+{Atlanta, GA}{BS, Computer Science}{Aug 2020-May 2024}
+
+
+\resumeSubheading{Lynbrook High School}
+{San Jose, CA}{High School Diploma}{Aug 2016-Jun 2020}
+
+\resumeSubheading{Johns Hopkins CTY}
+{Online}{Courses: Multivariable Calculus}{Jan 2020-Apr 2020}
+
+\section{Skills}
+
+\subsection{Languages}
+
+\subsubsection{Programming}
+
+Python, Java, C++, JavaScript
+
+\subsubsection{Markup}
+
+HTML, CSS, {\LaTeX}
+
+\subsection{Frameworks}
+
+\subsubsection{Javascript}
+
+React, Material-UI
+
+\subsubsection{HTML}
+Bootstrap 4
+
+\section{Extracurricular}
+
+\resumeSubheading{COSMOS, Machine Learning Cluster}
+{University of California, Santa Cruz}{Student}{Jun. 2019-Aug. 2019}
+
+Developed an algorithm to categorize tweets into whether or not it was relevant to a natural disaster.
+
+\resumeSubheading{Boy Scouts of America}
+{San Jose, CA}{Eagle Scout}{Jun 2014-Mar 2020}
+
+Earned the rank of Eagle Scout by performing a service project of building picnic tables for the safety of patrons at the Central Church of the Nazarene.
+
+\resumeSubheading{American Mensa}
+{United States}{Mensa Member}{Feb 2012-Present}
+
+Member of International High IQ Society
+
+\resumeSubheading{Davidson Institue for Talent Development}
+{Reno, NV}{Davidson Young Scholar}{Apr 2012-Mar 2020}
+
+Davidson Young Scholar: Attended Young Scholar Summits and Summer STARS (Successful, Talented, Ambitious, Remarkable, Scholars) Program.
+
+\section{Volunteering}
+
+\resumeSubheading{Lynbrook SMYLE}
+{San Jose, CA}{Student Mentor}{Apr 2019-Nov 2019}
+
+Taught local elementary students basic computer science concepts with Scratch Programming Language. The organization can be found at http://smylebayarea.org/
+
+\resumeSubheading{Loaves and Fishes}
+{San Jose, CA}{Kitchen Assistant}{Jan 2018-Mar 2019}
+
+Prepared and served food to families and individuals in need. Helped set up and clean the dining room.
+
+\end{document}
