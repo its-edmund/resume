@@ -12,6 +12,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{multicol}
+\usepackage{enumitem}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -73,6 +74,7 @@
   \end{tabular*}\vspace{0.25em}
 }
 
+
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
@@ -91,38 +93,23 @@
 \resumeSubheading{Georgia Institute of Technology}
 {Atlanta, GA}{Bachelor of Science in Computer Science
 }{Aug 2020-May 2024}
-Relevant Coursework: CS1331 Introduction to Object Orientated Programming
+Relevant Coursework:
+\setlist{nolistsep}
+\begin{itemize}[label=\raisebox{0.25ex}{\tiny$\bullet$}]
+  \item CS1331 Introduction to Object Orientated Programming
+\end{itemize}
+
 
 \resumeSubheading{Lynbrook High School}
 {San Jose, CA}{High School Diploma, U/W GPA: 3.97}{Aug 2016-Jun 2020}
-Relevant Coursework: AP Physics C: Mechanics, AP Computer Science A, AP Calculus BC
+Relevant Coursework:
+\setlist{nolistsep}
+\begin{itemize}[label=\raisebox{0.25ex}{\tiny$\bullet$}]
+  \item AP Computer Science A
+  \item AP Physics C: Mechanics
+  \item AP Calculus BC
+\end{itemize}
 
-\section{Skills}
-
-\begin{multicols}{2}
-\subsection{Technical Skills}
-
-\subsubsection{Languages}
-
-\begin{adjustwidth}{4em}{}
-Python 3, Java, C++, JavaScript(ES6), HTML, CSS, {\LaTeX}
-\end{adjustwidth}
-
-\subsubsection{Technologies}
-
-\begin{adjustwidth}{4em}{}
-ReactJS, Material-UI, Redux, Bootstrap 4, NodeJS
-\end{adjustwidth}
-
-\columnbreak
-
-\subsection{Soft Skills}
-
-\begin{adjustwidth}{2em}{}
-Bilingual Communicator(English, Mandarin), Leadership, Teamwork, Adaptbility
-\end{adjustwidth}
-
-\end{multicols}
 
 \section{Experience}
 
@@ -135,9 +122,9 @@ Working on a mobile application for a startup addressing mental health using Rea
 
 Developed an machine learning algorithm to categorize tweets into whether or not it was relevant to a natural disaster using NLTK Python library that has an accuracy of 82\%.
 
-\section{Extracurricular}
+\section{Projects}
 
-\resumeSubheading{Boy Scouts of America}
+\resumeSubheading{Group Chat Analyzer}
 {San Jose, CA}{Eagle Scout}{Jun 2014-Mar 2020}
 
 Earned the rank of Eagle Scout by performing a service project of building picnic tables for the safety of patrons at the Central Church of the Nazarene. A total of 130 hours was spent planning, drafting, and executing the project. 
@@ -158,5 +145,34 @@ Taught local elementary students basic computer science concepts with Scratch Pr
 {San Jose, CA}{Kitchen Assistant}{Jan 2018-Mar 2019}
 
 Prepared and served food to families and individuals in need. Helped set up and clean the dining room.
+
+\section{Skills}
+
+\setlist{nolistsep}
+\begin{multicols}{2}
+\subsection{Technical Skills}
+
+\subsubsection{Languages}
+
+\begin{adjustwidth}{4em}{}
+Python 3, Java, C++, JavaScript(ES6), HTML, CSS, {\LaTeX}
+\end{adjustwidth}
+
+\subsubsection{Technologies}
+
+\begin{adjustwidth}{4em}{}
+ReactJS, Material-UI, Redux, Bootstrap 4, NodeJS
+\end{adjustwidth}
+
+\columnbreak
+
+\setlist{nolistsep}
+\subsection{Soft Skills}
+
+\begin{adjustwidth}{2em}{}
+Bilingual Communicator(English, Mandarin), Leadership, Teamwork, Adaptbility
+\end{adjustwidth}
+
+\end{multicols}
 
 \end{document}
