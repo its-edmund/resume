@@ -1,6 +1,5 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,8pt]{article}
 
-\usepackage[thin]{roboto}
 \usepackage{changepage}
 \usepackage{tabularx}
 \usepackage{titlesec}
@@ -13,6 +12,7 @@
 \usepackage[english]{babel}
 \usepackage{multicol}
 \usepackage{enumitem}
+\usepackage{titlesec}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -35,8 +35,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
 \titleformat{\subsection}
 {\vspace{-1em}\large\bfseries}
@@ -70,10 +70,20 @@
   \vspace{0.25em}
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1} & #2 \\
-    \textit{\small#3} & \textit{\small #4} \\
+    \textit{#3} & \textit{#4} \\
   \end{tabular*}\vspace{0.25em}
 }
 
+\newcommand{\resumeSubheadingTwo}[2]{
+  \vspace{0.25em}
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+  \end{tabular*}\vspace{0.25em}
+}
+
+\newcommand{\resumeEmphasis}[1]{
+  {\small\textit{#1}\par}
+}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -95,13 +105,13 @@
 }{Aug 2020-May 2024}
 Relevant Coursework:
 \setlist{nolistsep}
-\begin{itemize}[label=\raisebox{0.25ex}{\tiny$\bullet$}]
+\begin{itemize}[label=\raisebox{0.25ex}{\tiny$\bullet$}, font=\small]
   \item CS1331 Introduction to Object Orientated Programming
 \end{itemize}
 
 
 \resumeSubheading{Lynbrook High School}
-{San Jose, CA}{High School Diploma, U/W GPA: 3.97}{Aug 2016-Jun 2020}
+{San Jose, CA}{High School Diploma, U/W GPA: 3.98}{Aug 2016-Jun 2020}
 Relevant Coursework:
 \setlist{nolistsep}
 \begin{itemize}[label=\raisebox{0.25ex}{\tiny$\bullet$}]
@@ -115,36 +125,62 @@ Relevant Coursework:
 
 \resumeSubheading{Project Beck}{San Jose, CA}{Software Engineer Intern}{Jul. 2020-Present}
 
-Working on a mobile application for a startup addressing mental health using React Native.
+Student run startup focused on developing a mobile application to address mental health
+
+\setlist{nolistsep}
+\begin{itemize}[label=\raisebox{0.25ex}{\tiny$\bullet$}]
+  \item Developed using React Native for mobile application
+  \item Utilizes PHQ-9 questionnaire to quantify depression symptoms
+\end{itemize}
 
 \resumeSubheading{COSMOS, Machine Learning Cluster}
 {University of California, Santa Cruz}{Student}{Jun. 2019-Aug. 2019}
 
-Developed an machine learning algorithm to categorize tweets into whether or not it was relevant to a natural disaster using NLTK Python library that has an accuracy of 82\%.
+Developed an machine learning algorithm to categorize tweets into whether or not it was relevant to a natural disaster
+
+\setlist{nolistsep}
+\begin{itemize}[label=\raisebox{0.25ex}{\tiny$\bullet$}]
+  \item Used a Naive Bayes Logarithmic regressions as model for categorization
+  \item Python with libaries like nltk and SciKitLearn were primarily used
+  \item Tested with an 81\% accuracy in categorizing tweets
+\end{itemize}
 
 \section{Projects}
 
-\resumeSubheading{Group Chat Analyzer}
-{San Jose, CA}{Eagle Scout}{Jun 2014-Mar 2020}
+\resumeSubheadingTwo{Group Chat Analyzer}{May 2020}
 
-Earned the rank of Eagle Scout by performing a service project of building picnic tables for the safety of patrons at the Central Church of the Nazarene. A total of 130 hours was spent planning, drafting, and executing the project. 
+Group Chat Analyzer parses and displays information from JSON data downloaded from Facebook Messenger
 
-\resumeSubheading{Davidson Institue for Talent Development}
-{Reno, NV}{Davidson Young Scholar}{Apr 2012-Mar 2020}
+\setlist{nolistsep}
+\begin{itemize}[label=\raisebox{0.25ex}{\tiny$\bullet$}]
+  \item Used Material-UI design system for styling
+  \item Data visualization using ChartJS and table to display data
+\end{itemize}
 
-Attended Young Scholar Summits and Summer STARS (Successful, Talented, Ambitious, Remarkable, Scholars) Program.
+\resumeSubheadingTwo{Weatherboy}
+{Jun. 2020}
 
-\section{Volunteering}
+Weatherboy is a weather application that has a dynamic background which matches with city searched
+
+\setlist{nolistsep}
+\begin{itemize}[label=\raisebox{0.25ex}{\tiny$\bullet$}]
+  \item Weekly forecast and currently temperature requested from OpenWeatherAPI
+  \item Splash API used to get background with city searched as a keyword.
+  \item React with styled-components to utilize transparent components
+\end{itemize}
+
+
+\section{Leadership}
 
 \resumeSubheading{Lynbrook SMYLE}
-{San Jose, CA}{Student Mentor}{Apr 2019-Nov 2019}
+{San Jose, CA}{Student Mentor}{Apr. 2019-Nov. 2019}
 
-Taught local elementary students basic computer science concepts with Scratch Programming Language. 
+Taught a classes of 6 elementary students basic computer science concepts with Python and Scratch Programming Language
 
-\resumeSubheading{Loaves and Fishes}
-{San Jose, CA}{Kitchen Assistant}{Jan 2018-Mar 2019}
+\resumeSubheading{Boy Scouts of America}
+{San Jose, CA}{Eagle Scout}{Apr. 2018-Sep. 2018}
 
-Prepared and served food to families and individuals in need. Helped set up and clean the dining room.
+Earned the rank of Eagle Scout by performing a service project of building picnic tables for the safety of patrons at the Central Church of the Nazarene.
 
 \section{Skills}
 
