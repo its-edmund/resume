@@ -4,3 +4,4 @@ resume.aux
 resume.out
 resume.tex
 *.swp
+.DS_Store
