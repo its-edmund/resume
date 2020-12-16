@@ -1,0 +1,212 @@
+\documentclass[letterpaper,8pt]{article}
+
+\usepackage{changepage}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage[margin=1in]{geometry}
+\usepackage{titling}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault} 
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.3in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+\titleformat{\subsection}
+{\vspace{-1em}\large\bfseries}
+{}
+{0em}
+{}[\vspace{-0.5em}]
+
+\titleformat{\subsubsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}
+
+\titlespacing{\subsubsection}
+{0em}{0em}{1em}
+
+\setlength{\multicolsep}{6.0pt plus 2.0pt minus 1.5pt}% 50% of original values
+
+% Custom Commands
+\renewcommand{\maketitle}{
+  \begin{center}
+  {\huge\bfseries
+  \theauthor}
+
+  \vspace{0.25em}
+
+  San Jose || 913-617-0133 || \href{mailto:mxin@gatech.edu}{mxin@gatech.edu} || \href{https://studentfromgeorgia.tech}{https://studentfromgeorgia.tech}
+
+  \end{center}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{0.25em}
+  \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingTwo}[2]{
+  \vspace{0.25em}
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+  \end{tabular*}\vspace{0.25em}
+}
+
+\newcommand{\resumeEmphasis}[1]{
+  {\small\textit{#1}\par}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\begin{document}
+
+\title{R\'esum\'e}
+\author{Edmund Xin}
+
+\maketitle
+
+\section{Education}
+
+\resumeSubheading{Georgia Institute of Technology}
+{Atlanta, GA}{Bachelor of Science in Computer Science
+}{Aug 2020-Dec 2023}
+
+Relevant Coursework:
+
+\setlist{nolistsep}
+\begin{itemize}[label=\raisebox{0.25ex}{\tiny$\bullet$}]
+  \item CS1331 Introduction to Object Orientated Programming
+\end{itemize}
+\vspace{5pt}
+
+
+\resumeSubheading{Lynbrook High School}
+{San Jose, CA}{High School Diploma, U/W GPA: 3.98}{Aug 2016-Jun 2020}
+
+\section{Skills}
+
+\setlist{nolistsep}
+\begin{multicols}{2}
+\subsection{Technical Skills}
+
+\subsubsection{Languages:}
+
+JavaScript, Python 3, Java, C++
+
+\subsubsection{Technologies:}
+
+ReactJS, Git, Material-UI, Redux, NodeJS
+
+\columnbreak
+
+
+\setlist{nolistsep}
+\subsection{Honors and Awards}
+Eagle Scout, AP Scholar with Distinction, Golden State Merit Diploma
+
+\end{multicols}
+
+\vspace{5pt}
+\section{Experience}
+
+\resumeSubheading{Project Beck}{Remote}{Software Engineer Intern}{Jul 2020-Sep 2020}
+
+Student-run startup focused on developing a mobile application to address mental health
+
+\setlist{nolistsep}
+\begin{itemize}[label=\raisebox{0.25ex}{\tiny$\bullet$}]
+  \item Developed landing and about page for the Project Beck website using \textbf{React}
+  \item Cooperated with a team of 10 developers using \textbf{Github}
+  \item Utilizes PHQ-9 questionnaire to quantify depression symptoms
+\end{itemize}
+\vspace{5pt}
+
+\resumeSubheading{COSMOS, Machine Learning Cluster}
+{University of California, Santa Cruz}{Summer Intern}{Jun 2019-Aug 2019}
+
+Developed a machine-learning algorithm to categorize tweets into whether or not it was relevant to a natural disaster
+
+\setlist{nolistsep}
+\begin{itemize}[label=\raisebox{0.25ex}{\tiny$\bullet$}]
+  \item Analyzed preprocessed data with a Naive Bayes Logarithmic regressions written in \textbf{Python}
+  \item Collaborated in a group of 4 people and presented findings to a group of 60 students
+  \item Tested with an 81\% accuracy in categorizing tweets
+\end{itemize}
+\vspace{5pt}
+
+\section{Projects}
+
+\resumeSubheading{Group Chat Analyzer}{https://git.io/JUqfc}{Sole Creator}{May 2020}
+
+Group Chat Analyzer parses and displays data about message logs from JSON data downloaded from Facebook Messenger
+
+\setlist{nolistsep}
+\begin{itemize}[label=\raisebox{0.25ex}{\tiny$\bullet$}]
+  \item Styled with \textbf{Material-UI} design system
+  \item \textbf{Data visualization} using ChartJS and table to display data
+\end{itemize}
+\vspace{5pt}
+
+\resumeSubheading{Weatherboy}{https://git.io/JUqfn}{Sole Creator}{Jun 2020}
+
+Weatherboy is a weather application that changes the background image according to the city that is searched
+
+\setlist{nolistsep}
+\begin{itemize}[label=\raisebox{0.25ex}{\tiny$\bullet$}]
+  \item Weekly forecast and current temperature requested from \textbf{OpenWeatherAPI}
+  \item Utilized \textbf{Splash API} to get a background image with city searched as a keyword
+  \item React with styled-components to utilize transparent components
+\end{itemize}
+\vspace{5pt}
+
+\section{Leadership}
+
+\resumeSubheading{GT WebDev}
+{Atlanta, GA}{Club Officer}{Oct 2020-Present}
+
+Manage Slack Channel for announcements and teach club members lessons on web development topics such as React or NodeJS during meetings
+
+\vspace{5pt}
+\resumeSubheading{Boy Scouts of America}
+{San Jose, CA}{Eagle Scout}{Apr 2018-Sep 2018}
+
+Instructed and organized a group of 30 scouts to build 2 picnic tables for the Central Church of the Nazarene to earn the rank of Eagle Scout
+
+\end{document}
