@@ -1,6 +1,7 @@
-resume.dvi
-resume.log
-resume.aux
-resume.out
+*.dvi
+*.log
+*.aux
+*.out
+
 *.swp
 .DS_Store
